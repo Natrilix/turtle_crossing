@@ -12,10 +12,10 @@ class Player(Turtle):
         self.penup()
         self.setheading(90)
         self.goto(STARTING_POSITION)
-        self.dummy_variable = True
+        self.playing = True
 
     def move(self):
         self.forward(MOVE_DISTANCE)
 
     def quit_game(self):
-        self.dummy_variable = False
+        self.playing = False
